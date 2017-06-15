@@ -1,0 +1,155 @@
+/* franchise ball : site stylesheet */
+
+/* autocomplete menu */
+.autocomplete-w1 { background:yellow; position:absolute; top:0px; left:0px; margin:6px 0 0 6px; /* IE6 fix: */ _background:none; _margin:1px 0 0 0; }
+.autocomplete { border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden; }
+.autocomplete .selected { background:#F0F0F0; }
+.autocomplete div { padding:2px 5px; white-space:nowrap; overflow:hidden; }
+.autocomplete strong { font-weight:normal; color:#3399FF; }
+
+/* generic_nav_control */
+div.generic_nav_control { float:left; margin:0 12px 0 0; width:180px; height:60px; border:1px solid #ddd; background:#f9f9f9; }
+div.generic_nav_control:hover { border:1px solid #ccc; background:#f3f3f3; }
+div.generic_nav_control div { float:left; margin:2px; width:172px; height:52px; font-size:12px; }
+
+/* increment, decrement blocks */
+.plus_block {
+	float:left; 
+	width:17px; 
+	height:16px; 
+	background:url('/img/site/plus_block.gif');
+}
+.plus_block:hover { background:url('/img/site/plus_block_hover.gif'); cursor:pointer; }
+.minus_block {
+	float:left; 
+	width:17px; 
+	height:16px;
+	background:url('/img/site/minus_block.gif');  	
+}
+.minus_block:hover { background:url('/img/site/minus_block_hover.gif'); cursor:pointer; }
+
+/* connect menu */
+#connect_menu {
+	background:none;
+	position:absolute; 
+	font-size:12px;
+}
+#connect_menu ul li {
+	margin:1px 2px 3px 2px;
+}
+
+/* dialog box */
+.ui-dialog {  }
+.ui-dialog a { color:#070; }
+.ui-dialog .ui-dialog-titlebar .ui-dialog-title { font-size:14px; }
+.dialog-error { color:#844; font-size:12px; font-weight:bold; }
+
+/* bubble */
+.bubble-box {
+	display:none;
+	/*background:#ffc url('/img/site/bubble-top-arrow.png') top center no-repeat, url('/img/site/border-vertical-bg.png') 5px 3px no-repeat;*/
+	background-image:url('/img/site/border-vertical-bg.png'), url('/img/site/border-vertical-bg.png'), url('/img/site/bubble-top-arrow.png');
+	background-position:top left, top right, top center;
+	background-repeat:repeat-y, repeat-y, no-repeat;
+	border-bottom:2px solid #070;
+	background-color:transparent;
+	padding:8px;
+	z-index:100;
+	color:#000;
+	font-weight:normal;
+	position:absolute;
+	font-size:12px;
+	padding-top:14px;
+	line-height:18px;
+	max-width:300px;
+}
+.alert-bubble-box { font-size:14px; font-weight:bold; color:#070; padding-top:16px; }
+
+/* side menu */
+.item-offseason { background:#dda; }
+.item-offseason.sub-menu-item { background:#dd6 !important; }
+
+/* sub menu */
+.sub-menu-item { background:#c0c0ff !important; }
+.sub-menu {  }
+
+/* div */
+div#step_navigation a { font-size:16px; margin:0 14px; }
+div#team_calendar_container { float:left; margin:0 10px; border:1px solid #fff; width:36px; height:27px; }
+/* div#team_calendar_container:hover { background:#f6f6f6; border:1px solid #ddd; } */
+div.value_change { float:left; margin:0 0 0 0; width:16px; height:16px; text-align:center; border:1px solid #aaa; cursor:pointer; }
+div.value_change:hover { border:1px solid #000; background:#dfd; }
+div.spinner-container { display:none; float:left; width:30px; height:30px; }
+
+/* a */
+a.topmenu_button { display:block; float:left; padding:6px; }
+a.topmenu_beta_button { color:#844; }
+a.topmenu_button:hover { padding:5px; background:rgba(238,238,248,0.7); border:1px solid #ccc; text-decoration:none; }
+a.topmenu_button_selected { display:block; float:left; padding:5px; background:#d0d0ff; border:1px solid #bbb; }
+a.nav_button { display:block; float:left; padding:3px; }
+a.nav_button:hover { padding:2px; background:#f6f6f6; border:1px solid #ddd; text-decoration:none; }
+a.dialog-link { color:#070 !important; }
+
+/* span */
+.span-link { color:#070; font-weight:bold; cursor:pointer; }
+.span-link:hover { text-decoration:underline; }
+
+/* lists */
+ul#admin_list { margin:0 0 8px 0; padding:0; }
+ul#admin_list li { list-style-type:none; margin:0 0 12px 0; }
+ul#admin_list li a { text-decoration:none; padding:6px; }
+ul#admin_list li a:hover { padding:5px; border:1px solid #ddd; background:#f6f6f6; }
+
+/* stats */
+.stats-container {
+	float:left;
+	clear:both;
+	width:200px;
+	margin:0 0 0 0;
+	padding:4px;
+	border:1px solid #aaa;
+	background:#eef;
+}
+
+/* bidding */
+span.player_bids_alert_msg {
+    float:left; 
+    width:330px; 
+    margin:6px 2px; 
+    text-align:center; 
+    font-weight:bold; 
+    color:#66e;
+}
+
+/* payment order form */
+.payment-order-form { width:520px; float:left; font-size:12px; border:1px solid #ddd; background:#eee; }
+.payment-order-form tr td { vertical-align:top; }
+.payment-order-form tr td:first-child { color:#447; font-weight:bold; padding-right:10px; padding-top:4px; }
+.payment-order-form tr td span.label { font-size:10px; margin-bottom:2px; margin-left:2px; }
+.payment-order-form tr td span, .payment-order-form tr td span input { display:block; clear:both; }
+.add-order-button { background:#f3fff3; color:#070; text-decoration:none; }
+.add-order-button:hover { background:#5c5; color:#fff; text-decoration:none; }
+.add-funds-purchase-button { float:left; font-size:11px !important; text-decoration:none !important; margin-top:18px; margin-left:22px; font-weight:bold; background:#e6e6e6; border:1px solid #bbb; padding:6px 12px 5px 12px !important; color:#070 !important; }
+.add-funds-purchase-button:hover { background:#ddd; }
+#premium-feature-list { float:left; padding:0; font-size:12px; }
+#premium-feature-list li { line-height:18px; }
+
+/* products & checkout process styles */
+.remove-product-box { background:url('/img/site/remove_product_box.png') top left no-repeat; }
+.remove-product-box:hover { background:url('/img/site/remove_product_box_hover.png') top left no-repeat; cursor:pointer; }
+
+/* news */
+.newsfeed-time:hover { color:#666; }
+.trade-details-link { color:#77f !important; }
+.newsfeed-comment a { font-weight:normal; }
+
+/* buttons */
+.statbox-options-button { display:block; width:64px; float:right; margin:0 0 0 10px; padding:2px; font-size:10px; color:#060; font-weight:bold; cursor:pointer; background:#eef; }
+.alert-bubble { position:relative; }
+.num-alerts-bubble { background:#fdd; padding:3px; color:#844; border:1px solid #ecc; min-width:14px; position:absolute; top:-4px; text-align:center; right:-20px; font-size:12px; }
+
+/* ads */
+#banner-ad-container { float:left; clear:both; width:665px; margin:20px 0 32px 18px; }
+
+
+
